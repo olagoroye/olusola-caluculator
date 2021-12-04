@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Funtions</title>
+  </head>
+  <body>
+    <h1>Funtions in JS</h1>
+    <script type="text/javascript">
+      /*function doStuff(){
+        var myString = 'I am ready to move back home';
+        var myUpperString = myString.toUpperCase();
+        console.log(myString);
+        console.log(myUpperString);
+      }
+      doStuff();*/
+      function myFood(){
+        var foods = ['eba', 'okro', 'jollofrice', 'beans'];
+        var myString = 'here is is my first food';
+
+      for( var i = 0; i < foods.length; i++){
+          var remainder = i % 2
+          if (remainder === 0){
+              var foodUpper = foods[i].toUpperCase();
+              console.log(`${myString} ${foodUpper} `);}
+              else{
+                console.log(`${myString} ${foods[i]} `);
+              }
+          }
+
+      }
+      //myFood();
+
+      function printMessage(message){
+        var printMessage = message.toUpperCase();
+        console.log(printMessage);
+      }
+
+      //printMessage('i will love jollof')
+
+      function printSum(num1, num2){
+        var sum = num1 + num2;
+        console.log(sum);
+      }
+      printSum(399 , 488);
+
+    </script>
+  </body>
+</html>

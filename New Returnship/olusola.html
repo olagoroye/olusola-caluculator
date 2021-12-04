@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Page</title>
+  </head>
+  <body>
+    <h1>Javascript Introduction</h1>
+    <p id="p1">Hello Friends</p>
+    <div class='d1'>
+        I am working upright. Insde of me if the ability to bring
+      your dreams to life. i hope you believe in yourself as much as i believe in myself. Thanks
+    </div>
+    <form >
+      first Number: <input type="number" size='5' id='firstName'>
+      Second Number: <input type="number" size='5' id='secondName'>
+    </form>
+
+
+    <script type="text/javascript">
+      // function changeText(){
+      //   console.log(document.getElementById('p1').innerHTML = "Hello World");
+      //
+      //   console.log(document.getElementsByClassName('d1').innerHTML);
+      // }
+      // function changeBackground(){
+      //   console.log(document.body.style.background = "green");
+      //
+      //   console.log(document.body.style.background = "pink");
+      // }
+      function getResult(){
+          var firstNum = document.getElementById('firstName').value;
+          var secondNum = document.getElementById('secondName').value;
+          let ans = firstNum * secondNum;
+          document.getElementById('result').innerHTML =ans;
+     }
+    </script>
+
+    <button type="button" onclick="getResult()">result</button>
+
+      <div id='result'>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+<!-- <button type="button" onclick="changeBackground()">Green</button>
+<button type="button" onclick="changeBackground()">Pink</button>
+    <input type="button" name="" value="Change" onclick="changeText()"/> -->
+  </body>
+</html>
